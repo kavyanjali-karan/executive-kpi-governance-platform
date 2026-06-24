@@ -1,0 +1,61 @@
+# Python
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+
+venv/
+.env
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# VS Code
+
+.vscode/
+
+# Power BI
+
+*.pbix
+
+# Tableau
+
+*.twb~
+*.twbx.lock
+
+# Data
+
+data/raw/*
+!data/raw/.gitkeep
+
+outputs/*
+!outputs/.gitkeep
+
+# Logs
+
+*.log
+
+# macOS
+
+.DS_Store
+
+# Windows
+
+Thumbs.db
+
+# Cache
+
+.pytest_cache/
+
+# Build
+
+dist/
+build/
+
+# Coverage
+
+.coverage
+htmlcov/

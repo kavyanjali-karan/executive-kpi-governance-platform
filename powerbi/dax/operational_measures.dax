@@ -1,0 +1,23 @@
+Rows Loaded =
+
+COUNTROWS(
+
+fact_customer_activity
+
+)
+
+--------------------------------
+
+Customers Loaded =
+
+DISTINCTCOUNT(
+
+fact_customer_activity[customer_key]
+
+)
+
+--------------------------------
+
+Data Refresh Status =
+
+"Success"

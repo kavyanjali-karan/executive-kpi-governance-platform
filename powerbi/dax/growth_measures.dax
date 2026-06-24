@@ -1,0 +1,49 @@
+Visitors =
+
+SUM(
+
+fact_customer_activity[visitors]
+
+)
+
+--------------------------------
+
+Signups =
+
+SUM(
+
+fact_customer_activity[signups]
+
+)
+
+--------------------------------
+
+Signup Rate =
+
+DIVIDE(
+
+[Signups],
+
+[Visitors]
+
+)
+
+--------------------------------
+
+Paid Conversion =
+
+DIVIDE(
+
+SUM(
+
+fact_customer_activity[paid_customers]
+
+),
+
+SUM(
+
+fact_customer_activity[trial_users]
+
+)
+
+)

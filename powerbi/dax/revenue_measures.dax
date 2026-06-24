@@ -1,0 +1,31 @@
+MRR =
+
+SUM(
+
+fact_customer_activity[revenue]
+
+)
+
+--------------------------------
+
+Revenue Target =
+
+50000
+
+--------------------------------
+
+Revenue Variance =
+
+[MRR]-[Revenue Target]
+
+--------------------------------
+
+Revenue Variance % =
+
+DIVIDE(
+
+[Revenue Variance],
+
+[Revenue Target]
+
+)

@@ -1,0 +1,39 @@
+Active Customers =
+
+DISTINCTCOUNT(
+
+dim_customer[customer_id]
+
+)
+
+--------------------------------
+
+Retention Rate =
+
+1-
+
+DIVIDE(
+
+SUM(
+
+fact_customer_activity[churned_customers]
+
+),
+
+SUM(
+
+fact_customer_activity[paid_customers]
+
+)
+
+)
+
+--------------------------------
+
+Customer Lifetime Revenue =
+
+SUM(
+
+fact_customer_activity[revenue]
+
+)
