@@ -160,8 +160,8 @@ Executive semantic model including:
 - Time Intelligence
 - Row Level Security
 - Executive Dashboard
-- Customer360 Dashboard
-- Operational Health Dashboard
+- Customer Dashboard
+- Regional Dashboard
 
 ---
 
@@ -170,10 +170,10 @@ Executive semantic model including:
 Executive reporting workbook including:
 
 - Executive Command Center
-- Growth Funnel
-- Revenue Intelligence
-- Customer360
-- Operational Health
+- Governance Calendar
+- KPI Targets
+- Customer Activity
+- Regional Analysis
 
 ---
 

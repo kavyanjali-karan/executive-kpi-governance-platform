@@ -1,0 +1,26 @@
+product_key,product_id,product_family,product_line,product_name
+1,PROD001,Automation,Automation Suite,Automation Product 1
+2,PROD002,Analytics,Analytics Suite,Analytics Product 2
+3,PROD003,Data Platform,Data Platform Suite,Data Platform Product 3
+4,PROD004,Automation,Automation Suite,Automation Product 4
+5,PROD005,Analytics,Analytics Suite,Analytics Product 5
+6,PROD006,Analytics,Analytics Suite,Analytics Product 6
+7,PROD007,Automation,Automation Suite,Automation Product 7
+8,PROD008,Governance,Governance Suite,Governance Product 8
+9,PROD009,Governance,Governance Suite,Governance Product 9
+10,PROD010,Automation,Automation Suite,Automation Product 10
+11,PROD011,Analytics,Analytics Suite,Analytics Product 11
+12,PROD012,Governance,Governance Suite,Governance Product 12
+13,PROD013,Automation,Automation Suite,Automation Product 13
+14,PROD014,Data Platform,Data Platform Suite,Data Platform Product 14
+15,PROD015,Analytics,Analytics Suite,Analytics Product 15
+16,PROD016,Data Platform,Data Platform Suite,Data Platform Product 16
+17,PROD017,Analytics,Analytics Suite,Analytics Product 17
+18,PROD018,Governance,Governance Suite,Governance Product 18
+19,PROD019,Data Platform,Data Platform Suite,Data Platform Product 19
+20,PROD020,Data Platform,Data Platform Suite,Data Platform Product 20
+21,PROD021,Automation,Automation Suite,Automation Product 21
+22,PROD022,Governance,Governance Suite,Governance Product 22
+23,PROD023,Governance,Governance Suite,Governance Product 23
+24,PROD024,Analytics,Analytics Suite,Analytics Product 24
+25,PROD025,Automation,Automation Suite,Automation Product 25

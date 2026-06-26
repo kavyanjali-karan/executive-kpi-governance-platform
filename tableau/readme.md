@@ -24,13 +24,13 @@ Business Intelligence Engineering
 
 Executive Command Center
 
-Growth Funnel
+Governance Calendar
 
-Customer360
+KPI Targets
 
-Revenue Intelligence
+Customer Activity
 
-Operational Health
+Regional Analysis
 
 ---
 

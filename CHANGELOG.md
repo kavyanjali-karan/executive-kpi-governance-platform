@@ -23,7 +23,7 @@ All notable changes to this repository are documented in this file.
 * Executive reporting
 * Business Intelligence Engineering
 * Semantic analytics
-* Operational monitoring
+* Regional Analysis
 
 ---
 

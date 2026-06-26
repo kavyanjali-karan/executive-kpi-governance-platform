@@ -23,14 +23,10 @@ Dashboards
 Dashboards
 
 01 Executive Command Center
-
-02 Growth Funnel
-
-03 Customer360
-
-04 Revenue Intelligence
-
-05 Operational Health
+02 Governance Calendar
+03 KPI Targets
+04 Customer Activity
+05 Regional Analysis
 
 ---
 
