@@ -1,225 +1,199 @@
+````markdown
 # Executive KPI Governance Platform
 
-Enterprise Business Intelligence Engineering platform for governed KPI definitions, dimensional modeling, executive reporting, and semantic analytics.
+A production-style Business Intelligence reporting system focused on KPI governance, standardized business metrics, semantic modeling, and executive reporting.
 
 ---
 
-## Business Context
+## Why This Reporting System Exists
 
-Business teams often consume metrics from multiple dashboards with inconsistent definitions and refresh schedules.
+Executive reporting is only as reliable as the metrics behind it. When business definitions differ across teams, dashboards become inconsistent, reporting loses credibility, and decision-making slows down.
 
-This repository demonstrates a Business Intelligence Engineering approach to standardizing KPI ownership, metric computation, reporting datasets, and executive decision support.
-
----
-
-## Stakeholders
-
-| Stakeholder | Primary Use Case |
-|----------------------|--------------------------------------|
-| Executive Leadership | Weekly & Monthly Business Reviews |
-| Finance | Revenue & MRR Tracking |
-| Marketing | Funnel Performance & Acquisition |
-| Product | Customer Activation & Retention |
-| Business Intelligence | Metric Governance & Monitoring |
+This repository demonstrates how governed KPI definitions, standardized reporting logic, curated analytical datasets, and semantic modeling can be organized into a reporting system that produces consistent business metrics for executive reporting.
 
 ---
 
-# KPI Framework
+## Business Domain
 
-## Executive KPIs
+The reporting system focuses on standardizing executive performance reporting through:
 
-- Revenue
-- Monthly Recurring Revenue (MRR)
-- Paid Customers
-- Customer Retention
-- Revenue per Customer
+- KPI governance
+- Business metric definitions
+- Reporting standards
+- Executive scorecards
+- Periodic business reviews
 
-## Growth KPIs
-
-- Visitors
-- Signups
-- Activation Rate
-- Trial Conversion
-- Paid Conversion
-
-## Operational KPIs
-
-- Dashboard Refresh Status
-- Data Quality Score
-- Duplicate Records
-- Missing Records
+Rather than creating isolated dashboards, the reporting workflow establishes a common reporting foundation that can be reused across business functions.
 
 ---
 
-# Repository Architecture
+## Reporting Architecture
 
 ```
-Raw Data
-
-↓
-
-Staging Layer
-
-↓
-
+Operational Data
+        │
+        ▼
+SQL Transformation
+        │
+        ▼
+Python ETL & Validation
+        │
+        ▼
+Curated Reporting Layer
+        │
+        ▼
 Dimensional Model
-
-↓
-
-Metric Layer
-
-↓
-
-Business Data Marts
-
-↓
-
-Semantic Layer
-
-↓
-
-Power BI / Tableau
-
-↓
-
-Executive Business Review
+        │
+        ▼
+Power BI Semantic Model
+        │
+        ▼
+Executive Reporting
 ```
+
+Each layer has a single responsibility, reducing duplicated business logic while improving reporting consistency.
 
 ---
 
-# Data Model
+## Repository Structure
 
-## Fact
-
-```
-fact_customer_activity
-```
-
-## Dimensions
-
-```
-dim_customer
-
-dim_product
-
-dim_channel
-
-dim_region
-
-dim_date
-```
-
-Star schema with single-direction relationships.
-
----
-
-# Repository Structure
-
-```
+```text
 executive-kpi-governance-platform/
 
-data/
-sql/
-python/
-powerbi/
-tableau/
-docs/
-tests/
-outputs/
-assets/
+├── data/
+│   ├── raw/
+│   ├── curated/
+│   └── warehouse/
+│
+├── sql/
+├── python/
+├── powerbi/
+├── documentation/
+├── outputs/
+└── README.md
 ```
 
----
-
-# SQL Deliverables
-
-- Star Schema DDL
-- Staging Layer
-- Business Data Marts
-- KPI Metric Layer
-- Executive Reporting Views
-- Operational Monitoring Queries
+The repository separates data preparation, reporting assets, governance documentation, and presentation into independent layers that are easier to maintain.
 
 ---
 
-# Python Deliverables
+## Analytical Model
 
-- Data Extraction
-- Transformation
-- Validation
-- Dataset Generation
-- Monitoring Utilities
+The reporting model organizes executive reporting around shared business dimensions and governed KPIs.
 
----
+### Dimensions
 
-# Power BI
+- Customer
+- Product
+- Region
+- Date
 
-Executive semantic model including:
+### Fact Table
 
-- Measure Table
-- Time Intelligence
-- Row Level Security
-- Executive Dashboard
-- Customer Dashboard
-- Regional Dashboard
-
----
-
-# Tableau
-
-Executive reporting workbook including:
-
-- Executive Command Center
-- Governance Calendar
-- KPI Targets
 - Customer Activity
-- Regional Analysis
+
+This dimensional structure supports consistent filtering and reusable reporting across executive dashboards.
 
 ---
 
-# Documentation
+## KPI Governance
 
-- Executive Summary
-- Weekly Business Review
-- Monthly Business Review
-- Quarterly Business Review
-- Metric Dictionary
-- Business Glossary
-- Reporting Playbook
+Business metrics are documented before they are visualized.
 
----
+The repository includes governance assets that support:
 
-# Technology
+- KPI definitions
+- Metric dictionary
+- Business glossary
+- Reporting standards
+- Governance calendar
+- Executive reporting cadence
 
-| Layer | Technology |
-|-----------------|----------------|
-| SQL | PostgreSQL |
-| Python | Python 3 |
-| Data | Pandas |
-| BI | Power BI |
-| Visualization | Tableau |
-| Version Control | Git |
+Keeping reporting definitions separate from dashboards improves consistency as reporting requirements evolve.
 
 ---
 
-# Project Status
+## Power BI Reporting
 
-Current Version
+Power BI consumes curated analytical datasets through a semantic model designed for executive reporting.
 
-```
-v1.0
-```
+The reporting layer includes views focused on:
 
-Repository Focus
+- Executive KPI performance
+- Regional reporting
+- Customer activity
+- Product performance
+- Business scorecards
 
-```
-Business Intelligence Engineering
+Business calculations remain centralized to ensure that recurring metrics are interpreted consistently.
 
-Metric Governance
+---
 
-Executive Reporting
+## Engineering Documentation
 
-Dimensional Modeling
+Engineering documentation is maintained alongside implementation and includes:
 
-Semantic Analytics
-```
+- Reporting architecture
+- Data dictionary
+- Business glossary
+- Dashboard style guide
+- Reporting playbook
+- Weekly business review
+- Executive summary
+
+Documentation serves as part of the reporting solution rather than supplementary project material.
+
+---
+
+## Engineering Decisions
+
+The reporting solution is organized around several core principles:
+
+- Govern business metrics before building reports.
+- Separate business logic from presentation.
+- Reuse curated analytical datasets across reporting assets.
+- Document reporting standards alongside implementation.
+- Maintain consistent KPI definitions throughout the reporting lifecycle.
+
+---
+
+## Technology
+
+**Reporting**
+
+- Power BI
+- DAX
+- Power Query
+
+**Data Engineering**
+
+- SQL
+- Python
+- ETL
+- Data Validation
+
+**Modeling**
+
+- Dimensional Modeling
+- Semantic Modeling
+
+**Engineering**
+
+- KPI Governance
+- Reporting Architecture
+- Business Documentation
+- Git
+- GitHub
+
+---
+
+## Portfolio Context
+
+This repository is part of a Business Intelligence Engineering portfolio demonstrating how reporting systems are designed through reporting architecture, SQL transformation, dimensional modeling, KPI governance, semantic modeling, and executive reporting.
+
+Related repositories:
+
+- Customer Retention Intelligence Platform
+- Growth Funnel Performance Review
+- Marketplace Growth Performance Review
+````
